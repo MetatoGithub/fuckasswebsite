@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scroll Vibes</title>
+  <title>Smooth Scroll Vibes</title>
   <style>
     * {
       margin: 0;
@@ -16,53 +16,47 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    /* 🔥 Background image section */
-    .hero {
+    body {
+      background: #333;
+      color: #eee;
+    }
+
+    /* 👇 Fixed background image */
+    .background {
+      background: url('https://cdn.discordapp.com/attachments/725156295245561857/1398459849766866974/sickfuckingpfp.jpg?ex=688570ba&is=68841f3a&hm=70fa88185bc9ce566f59a527057e29529d563fc9f8fb836202379dcf1349ba0d&') center/cover no-repeat fixed;
       height: 100vh;
-      background: url('https://cdn.discordapp.com/attachments/725156295245561857/1398459849766866974/sickfuckingpfp.jpg?ex=688570ba&is=68841f3a&hm=70fa88185bc9ce566f59a527057e29529d563fc9f8fb836202379dcf1349ba0d&') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
     }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 30vh;
-      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #333 100%);
-    }
-
-    .hero h1 {
-      z-index: 1;
-      color: #fff;
+    .background h1 {
+      color: white;
       font-size: 4rem;
       text-shadow: 0 0 10px #000;
+      z-index: 1;
     }
 
-    /* 👇 Gray content block */
+    /* 👇 Content scrolls over the image */
     .content {
       background: #333;
-      color: #eee;
+      color: #ccc;
       padding: 4rem 2rem;
-      min-height: 100vh;
+      min-height: 120vh;
+      position: relative;
     }
 
     .content h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     .content p {
-      max-width: 600px;
-      line-height: 1.6;
-      color: #ccc;
+      max-width: 700px;
+      line-height: 1.7;
     }
 
-    /* Optional: smooth scroll effect */
     html {
       scroll-behavior: smooth;
     }
@@ -70,14 +64,14 @@
 </head>
 <body>
 
-  <section class="hero">
-    <h1>🌌 Welcome to My World</h1>
+  <section class="background">
+    <h1>🌠 Welcome Home</h1>
   </section>
 
   <section class="content">
-    <h2>About This Place</h2>
+    <h2>Fade Into the Depths</h2>
     <p>
-      This page fades from a beautiful background into a chill gray zone. You can add whatever you want here—text, links, maybe a live cat cam or a manifesto or some secret lore. 🐾✨
+      As you scroll down, the gray void rises to cover the stars. The background image stays still, like a dream frozen in time 🫠. You can add anything here—more text, images, maybe a slick nav bar, or whatever your creative brain wants.
     </p>
   </section>
 
