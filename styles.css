@@ -22,6 +22,12 @@ h1 {
   color: #888;
 }
 
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .searchContainer {
   display: flex;
   align-items: center;
@@ -32,8 +38,8 @@ h1 {
   height: 50px;
   box-sizing: border-box;
   overflow: hidden;
-  width: 540px;
-  max-width: 100%;
+  width: 90%;
+  max-width: 600px;
 }
 
 .searchContainer input{
@@ -89,4 +95,3 @@ h1 {
 .searchContainer button:active {
   transform: scale(0.9);
 }
-
