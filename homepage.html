@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🏮 welcome</h1>
+  <form action="https://www.google.com/search" method="get">
+    <div class="searchContainer">
+      <input id="gsearch" name="q" type="search" placeholder="Search Google" aria-label="Search Google" required>
+      <button id="gbutton" type="submit">🔎</button>
+    </div>
+  </form>
+  <script>
+    const input = document.getElementById('gsearch');
+    const button = document.getElementById('gbutton');
+
+    input.addEventListener('input', () => {
+      if (input.value.trim() !== '') {
+        button.classList.add('visible');
+      } else {
+        button.classList.remove('visible');
+      }
+    });
+  </script>
+  <p class="bottomtext">meta // メタトバック
+  <br/>🍡
+  </p>
+</body>
+</html>

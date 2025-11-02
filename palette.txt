@@ -1,0 +1,9 @@
+#111111 - Background color
+#eeeeee - Text color
+#49345B - Accent color 1
+#735290 - Accent color 2
+#8075FF - Accent color 3
+
+#81C14B - green
+#3AAED8 - blue
+#DB162F - red
