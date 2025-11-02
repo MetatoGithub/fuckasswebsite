@@ -8,8 +8,9 @@ This website serves as my personal hub, combining my browser homepage, portfolio
 
 ## Todo List
 - [x] Create homepage
+- [ ] Add pins and favorites to homepage
+- [ ] Make search bar fuzzy-find pins (typing you and return auto redirects to youtube if it's pinned)
 - [ ] Create portfolio
 - [ ] Create social media links/aboutme page
-- [ ] Add pins and favorites
 - [ ] Add homepages for other users
 
