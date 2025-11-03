@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles_main.css">
+  <link rel="stylesheet" href="homepages.css">
 </head>
 <body>
   <h1>🏮 welcome</h1>
@@ -14,6 +15,14 @@
       <button id="gbutton" type="submit">🔎</button>
     </div>
   </form>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const sbar = document.getElementById('gsearch');
+      sbar.focus();
+    });
+  </script>
+
   <script>
     const input = document.getElementById('gsearch');
     const button = document.getElementById('gbutton');

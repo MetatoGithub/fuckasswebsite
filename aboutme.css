@@ -1,0 +1,116 @@
+
+.intro b {
+    color: #8075FF;
+}
+.titleanim {
+    animation-name: titlepurple;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;;
+}
+@keyframes titlepurple{ /*Animation du bouton*/
+    0%   {text-shadow: 0 10px 20px #49345B;}
+    25%  {text-shadow: 0 10px 20px #735290;}
+    50%  {text-shadow: 0 10px 20px #8075FF;}
+    75% {text-shadow: 0 10px 20px#735290;}
+    100% {text-shadow: 0 10px 20px #49345B;}
+}
+.aboutme {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sheet {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        flex-direction: column;
+    }
+    .sheet, .links {
+        width: 100%;
+    }
+}
+.sheet h2 {
+    font-weight: bold;
+    color: #735290;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sheet .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.sheet .info-row:hover {
+    background-color: rgba(115, 82, 144, 0.1);
+}
+
+.sheet h3 {
+    font-weight: bold;
+    color: #8075FF;
+    margin: 0;
+}
+
+.sheet p {
+    margin: 0;
+    text-align: right;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+.links button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-justify: center;
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  border: #8075FF 1px solid;
+  color: #8075FF;
+  padding: 10px 10px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.links button:hover {
+  background-color: rgba(115, 82, 144, 0.1);
+  box-shadow: 0 0 20px #735290;
+  transform: translateY(-2px);
+}
+.links button:active {
+  transform: scale(0.98) translateY(0);
+}
+.links h2 {
+    font-weight: bold;
+    color: #735290;
+    text-align: center;
+}
+.links i {
+    margin-right: 8px;
+}

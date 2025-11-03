@@ -1,0 +1,26 @@
+/* this is a cool ass comment. git didnt push styles.css. */
+
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+a {
+  text-decoration: none;
+}
+
+.bottomtext {
+  margin-top: 1rem;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #888;
+}
