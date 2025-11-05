@@ -1,0 +1,241 @@
+
+.intro b {
+    color: #8075FF;
+}
+.titleanim {
+    animation-name: titlepurple;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;;
+}
+@keyframes titlepurple{ /*Animation du bouton*/
+    0%   {text-shadow: 0 10px 20px #FF3864;}
+    25%  {text-shadow: 0 10px 20px #4FB286;}
+    50%  {text-shadow: 0 10px 20px #8075FF;}
+    75% {text-shadow: 0 10px 20px#E8C547;}
+    100% {text-shadow: 0 10px 20px #FF3864;}
+}
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        flex-direction: column;
+    }
+    .sheet, .links, .hardware, .software {
+        width: 100%;
+    }
+}
+
+.sheet {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+    border-radius: 5px;
+    /* border-left: #4FB286 10px solid; */
+}
+
+.sheet h2 {
+    font-weight: bold;
+    color: #4FB286;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sheet .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-left 0.2s ease;
+    border-left: #4FB286 10px solid;
+}
+
+.sheet .info-row:hover {
+    background-color: rgba(115, 82, 144, 0.1);
+    border-left: #4FB286 15px solid;
+}
+
+.sheet h3 {
+    font-weight: bold;
+    color: #4FB286;
+    margin: 0;
+}
+
+.sheet p {
+    margin: 0;
+    text-align: right;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+.links button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-justify: center;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border-top: #E8C547 1px solid;
+    border-right: #E8C547 1px solid;
+    border-bottom: #E8C547 1px solid;
+    /* color: #8175ff00; */
+    /* removed to make button colors follow the site colors  */ 
+    padding: 10px 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+.links button:hover {
+    background-color: rgba(115, 82, 144, 0.1);
+    box-shadow: 0 0 20px #E8C547;
+    transform: translateY(-2px);
+    border-left: #E8C547 1px solid;
+}
+.links button:active {
+    transform: scale(0.98) translateY(0);
+}
+/* idfk what im doing ngl */
+
+.links h2 {
+    font-weight: bold;
+    color: #E8C547;
+    text-align: center;
+}
+.links i {
+    margin-right: 8px;
+}
+
+.steam {
+    border-left: #184454 10px solid;
+    color: #184454;
+}
+
+.github {
+    border-left: #ccc 10px solid;
+    color: #ccc;
+}
+
+.twitter {
+    border-left: #1DA1F2 10px solid;
+    color: #1DA1F2;
+}
+
+.discord {
+    border-left: #5865F2 10px solid;
+    color: #5865F2;
+}
+
+.email {
+    border-left: #D44638 10px solid;
+    color: #D44638;
+}
+
+.instagram {
+    border-left: #E1306C 10px solid;
+    color: #E1306C;
+}
+
+
+
+.hardware {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+}
+
+.hardware h2 {
+    font-weight: bold;
+    color: #FF3864;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.hardware .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-left 0.2s ease-in-out;
+    border-left: #FF3864 10px solid;
+}
+
+.hardware .info-row:hover {
+    background-color: rgba(115, 82, 144, 0.1);
+    border-left: #FF3864 15px solid;
+}
+
+.hardware h3 {
+    font-weight: bold;
+    color: #FF3864;
+    margin: 0;
+}
+
+.hardware p {
+    margin: 0;
+    text-align: right;
+}
+
+
+
+.software {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+}
+
+.software h2 {
+    font-weight: bold;
+    color: #4FB286;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.software .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.software .info-row:hover {
+    background-color: rgba(115, 82, 144, 0.1);
+}
+
+.software h3 {
+    font-weight: bold;
+    color: #8075FF;
+    margin: 0;
+}
+
+.software p {
+    margin: 0;
+    text-align: right;
+}
