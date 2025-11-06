@@ -3,6 +3,7 @@
 #FF3864 - Accent color 1
 #4FB286 - Accent color 2
 #8075FF - Accent color 3
+#948aff99 - Glow color for 3
 #E8C547 - Accent color 4
 #102E4A - Accent color 5
 
